@@ -82,11 +82,11 @@ __plugin_name__ = "Malyan/Monoprice Connection Fix"
 def __plugin_check__():
 	import sys
 
-	#if sys.platform == "win32":
-	#	# Windows doesn't allow double open, log and bail
-	#	import logging
-	#	logging.getLogger("octoprint.plugins.malyan_connection_fix").error("Cannot run this plugin under Windows")
-	#	return False
+	if sys.platform == "win32":
+		# Windows doesn't allow double open, log and bail
+		import logging
+		logging.getLogger("octoprint.plugins.malyan_connection_fix").error("Cannot run this plugin under Windows")
+		return False
 
 	return True
 
