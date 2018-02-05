@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_malyan_connection_fix/templates *
+recursive-include octoprint_malyan_connection_fix/translations *
+recursive-include octoprint_malyan_connection_fix/static *
