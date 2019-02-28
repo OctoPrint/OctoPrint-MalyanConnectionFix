@@ -39,6 +39,12 @@ class MalyanConnectionFixPlugin(octoprint.plugin.OctoPrintPlugin):
 				comm_instance._log("Failed to autodetect serial port, please set it manually.")
 				return None
 
+		# Do not try to handle the Virtual Printer with this plugin
+		# solves Issue 2 https://github.com/OctoPrint/OctoPrint-MalyanConnectionFix/issues/2
+		if port == "VIRTUAL":
+			comm_instance._log("Bypassing Malyan/Monoprice Connection Fix Plugin when using Virtual Printer")
+			return None
+
 		# connect to regular serial port
 		comm_instance._log("Connecting to: %s" % port)
 		comm_instance._log("Using Malyan/Monoprice Connection Fix Plugin to create serial connection")
