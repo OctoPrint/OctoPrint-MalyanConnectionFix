@@ -83,6 +83,7 @@ class MalyanConnectionFixPlugin(octoprint.plugin.OctoPrintPlugin):
 
 
 __plugin_name__ = "Malyan/Monoprice Connection Fix"
+__plugin_pythoncompat__ = ">=2.7,<4"
 
 
 def __plugin_check__():
