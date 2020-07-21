@@ -12,6 +12,7 @@ Printer models known to be affected by this and confirmed as issues resolved wit
   * Turnigy Fabrikator II Mini (Malyan M100)
   * Monoprice Select Mini (Malyan M200)
   * Monoprice Mini Delta (Malyan ?)
+  * Monoprice Cadet (Malyan ?)
 
 For more details please refer to [this ticket on the OctoPrint issue tracker](https://github.com/foosel/OctoPrint/issues/2271).
 
